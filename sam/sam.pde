@@ -11,7 +11,7 @@ int[][] data;
 
 void setup(){
   smooth();
-  size(600,600);
+  size(500,600);
   // load csv file into String array
   String [] lines = loadStrings("Cyclist_Count_by_Year_At_Selected_Commuter_Locations.csv");
 
@@ -55,25 +55,21 @@ void setup(){
 
 void draw(){
 
-  background(245);
+  background(130);//setting background color 
   int offSet = 50;
   
-  noStroke();
-  
+  noStroke();//Disables drawing the stroke (outline).
     for(int i = 0; i < data.length; i++){ //for each row
-
-    for(int j = 0; j < data[i].length; j++){ //and for each col
-       //
-       rect(0,20*i,50,20);
+    for(int j = 0; j < data[i].length; j++){ //and for each col//
+       rect(0,20*i,50,20);//make a rectangular 
        
        
-       
-       
-       if ( data[i][j] > 0 && data[i][j] < 500 ){
-       fill(255,245,245);
-       rect(50*j,20*i,50,20);
-       }else if ( data[i][j] > 500 && data[i][j] < 1000 ) {
-       fill(255,235,235);
+   
+       if ( data[i][j] > 0 && data[i][j] < 500 ){// I creat if else condition for changing its colors
+       fill(255,245,245);//The fist one is red, because i want to set red as the main color
+       rect(50*j,20*i,50,20);//adding more retangular
+       }else if ( data[i][j] > 500 && data[i][j] < 1000 ) {//setting the condition
+       fill(255,235,235);//-10 each times
        rect(50*j,20*i,50,20);     
        }else if ( data[i][j] > 1000 && data[i][j] < 1500 ) {
        fill(255,225,225);
@@ -118,7 +114,7 @@ void draw(){
        }
        
 
-       text(data[i][j],20+50*j,20+20*i);
+       text(data[i][j],20+50*j,20+20*i);//the text 
        
 
     }
