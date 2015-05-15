@@ -21,7 +21,7 @@ void setup() {
 }
  
 void draw() {
-   noCursor();
+   noCursor();//hide the cursor
   cx = mouseX;
   cy = mouseY;
   background(255,255,255); //my favorite blue   

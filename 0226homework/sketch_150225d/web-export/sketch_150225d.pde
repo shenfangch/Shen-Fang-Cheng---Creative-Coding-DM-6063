@@ -1,5 +1,3 @@
-//when you click mouse, it become faster; when you click space, it become slower
-// this is the the sounds we need to play sound
 import ddf.minim.*;
 Minim minim; // audio engine
 AudioPlayer thesound;

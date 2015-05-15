@@ -1,13 +1,11 @@
-//when you click mouse, it become faster; when you click space, it become slower
-// this is the the sounds we need to play sound
 import ddf.minim.*;
 Minim minim; // audio engine
 AudioPlayer thesound;
-float x = 100;
-float y = 100;
-float xspeed = 10;
-float yspeed = 10;
-color ballColor;
+var x = 100;
+var y = 100;
+var xspeed = 10;
+var yspeed = 10;
+var ballColor;
 
 void setup() {
   size(640,480);
